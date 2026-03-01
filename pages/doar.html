@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Doar — Avivamento</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="../index.html">
+                <svg class="logo-emoji" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="2" width="4" height="20" fill="var(--blue-700)" rx="1"/>
+                    <rect x="4" y="10" width="16" height="4" fill="var(--blue-700)" rx="1"/>
+                </svg>
+                <div class="logo-text-wrapper">
+                    <span class="logo-text">Avivamento</span>
+                    <span class="logo-subtitle">Nas graças de Cristo</span>
+                </div>
+            </a>
+            <input type="checkbox" id="navToggle" class="nav-toggle-checkbox" aria-label="Abrir menu">
+            <label for="navToggle" class="nav-toggle-label">
+                <span class="hamburger" aria-hidden="true"></span>
+            </label>
+            <nav class="main-nav" role="navigation" aria-label="Menu principal">
+                <div class="nav-logo">
+                    <span class="nav-logo-text">Avivamento</span>
+                    <span class="nav-logo-subtitle">Nas graças de Cristo</span>
+                </div>
+                <a href="../index.html">Início</a>
+                <a href="doar.html" class="btn btn-primary">Quero Doar</a>
+                <a href="receber.html" class="btn btn-outline">Quero Receber</a>
+                <a href="voluntarios.html" class="btn btn-ghost">Voluntários</a>
+                <a class="btn whatsapp" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+gostaria+de+ajudar+no+projeto+Avivamento" target="_blank" rel="noopener">WhatsApp</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Doações</h1>
+            <p class="subtitle lead">Obrigada por querer ajudar! Escolha a forma de doação e preencha os dados.</p>
+        </div>
+        <div class="page-hero-image">
+            <img src="https://abolbrasil.org.br/wordpress/wp-content/uploads/2022/02/b7a24420-bc42-456f-b313-bb6301a29f70.jpg" alt="Doação de alimentos e roupas" />
+        </div>
+        <div class="intro-text-section">
+            <p>Aceitamos doações de cestas básicas, roupas em bom estado e outros itens essenciais. Você pode entregar pessoalmente em nossos pontos de coleta, ou agendar retirada com o grupo. Para doações em dinheiro, informe no campo 'Valor' e aguarde nosso contato.</p>
+            <p>Todas as doações são organizadas e distribuídas de forma transparente, garantindo que sua contribuição chegue a quem realmente precisa.</p>
+        </div>
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="gallery-title">Impacto das Doações</h2>
+                <div class="grid-photos gallery-grid single-column">
+                    <figure class="photo">
+                        <img src="https://www.piratininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/f4fa7f482088ac653918196d984023f1.jpeg" alt="Organização de doações" />
+                    </figure>
+                </div>
+                <div class="donation-impact-text">
+                    <h3>Como sua doação transforma vidas</h3>
+                    <p>Cada doação oferece esperança e dignidade para famílias em dificuldades. Nossos voluntários organizam e distribuem todas as doações de forma justa e transparente, mantendo registros detalhados para que você acompanhe o impacto da sua contribuição.</p>
+                    <p>Além do apoio material, oferecemos acompanhamento espiritual e emocional. Acreditamos que o cuidado integral transforma vidas verdadeiramente.</p>
+                </div>
+            </div>
+        </section>
+        <section class="form-section">
+            <div class="form-grid">
+                <form class="donation-form" action="#" method="post">
+                    <div class="field-row">
+                        <label>Nome completo
+                            <input type="text" name="name" placeholder="Seu nome" required>
+                        </label>
+                        <label>E-mail para contato
+                            <input type="email" name="email" placeholder="seu@exemplo.com" required>
+                        </label>
+                    </div>
+                    <label>Tipo de doação
+                        <select name="type">
+                            <option>Alimentos</option>
+                            <option>Roupas</option>
+                            <option>Dinheiro</option>
+                            <option>Outros</option>
+                        </select>
+                    </label>
+                    <label>Valor (se aplicável)
+                        <input type="number" name="amount" min="0" step="0.01" placeholder="0.00">
+                    </label>
+                    <label>Mensagem (opcional)
+                        <textarea name="message" rows="4" placeholder="Uma mensagem de fé ou instruções"></textarea>
+                    </label>
+                    <label class="consent"><input type="checkbox" name="consent" required> Eu concordo que meus dados serão usados para contato referente à doação.</label>
+                    <label>Forma de doação
+                        <select name="donation_method">
+                            <option>PIX (transferência)</option>
+                            <option>Entrega presencial</option>
+                            <option>Agendar retirada</option>
+                        </select>
+                    </label>
+                    <label>Data preferida (se agendamento)
+                        <input type="date" name="scheduleDate">
+                    </label>
+                    <label>Horário (se agendamento)
+                        <input type="time" name="scheduleTime">
+                    </label>
+                    <div class="donation-info-inline">
+                        <p><strong>Chave PIX:</strong> contato@avivamento.org</p>
+                        <p class="small-quote">Para PIX, use a chave acima. Para entrega ou agendamento, nossa equipe entrará em contato.</p>
+                    </div>
+                    <div class="form-actions">
+                        <button class="btn btn-primary" type="submit">Enviar Doação</button>
+                        <a class="btn btn-outline" href="../index.html">Voltar</a>
+                    </div>
+                </form>
+
+                <aside class="donation-info">
+                    <h3>Como doar</h3>
+                    <p>Você pode entregar pessoalmente em nossos pontos de coleta, ou agendar retirada com o grupo. Para doações em dinheiro, informe no campo 'Valor' e aguarde nosso contato.</p>
+                    <h4>Pontos de Coleta</h4>
+                    <ul>
+                        <li>Igreja Central — Rua da Fé, 123</li>
+                        <li>Salão Paroquial — Av. Esperança, 45</li>
+                    </ul>
+                    <div class="small-quote">"Cada um contribua segundo propôs no coração, não com tristeza nem por necessidade..." — 2 Coríntios 9:7</div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <strong>Avivamento</strong> — Grupo de Oração • Feito com fé e amor</p>
+        </div>
+    </footer>
+</body>
+</html>

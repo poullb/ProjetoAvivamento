@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Voluntários — Avivamento</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="../index.html">
+                <svg class="logo-emoji" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="2" width="4" height="20" fill="var(--blue-700)" rx="1"/>
+                    <rect x="4" y="10" width="16" height="4" fill="var(--blue-700)" rx="1"/>
+                </svg>
+                <div class="logo-text-wrapper">
+                    <span class="logo-text">Avivamento</span>
+                    <span class="logo-subtitle">Nas graças de Cristo</span>
+                </div>
+            </a>
+            <input type="checkbox" id="navToggle" class="nav-toggle-checkbox" aria-label="Abrir menu">
+            <label for="navToggle" class="nav-toggle-label">
+                <span class="hamburger" aria-hidden="true"></span>
+            </label>
+            <nav class="main-nav" role="navigation" aria-label="Menu principal">
+                <div class="nav-logo">
+                    <span class="nav-logo-text">Avivamento</span>
+                    <span class="nav-logo-subtitle">Nas graças de Cristo</span>
+                </div>
+                <a href="../index.html">Início</a>
+                <a href="doar.html" class="btn btn-primary">Quero Doar</a>
+                <a href="receber.html" class="btn btn-outline">Quero Receber</a>
+                <a href="voluntarios.html" class="btn btn-ghost">Voluntários</a>
+                <a class="btn whatsapp" href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Voluntários</h1>
+            <p class="subtitle lead">Participe da nossa missão! Seja um voluntário e ajude a transformar vidas através da solidariedade e do amor ao próximo.</p>
+        </div>
+        <div class="page-hero-image">
+            <img src="https://gife.org.br/wp/media/2023/09/hannah-busing-RvF2R_qMpRk-unsplash-1-2048x1638.jpg" alt="Voluntários trabalhando juntos" />
+        </div>
+        <div class="intro-text-section">
+            <p>Ser voluntário é fazer parte de uma comunidade que acredita na solidariedade. Nossos voluntários são o coração do projeto, dedicando-se com paixão para fazer a diferença.</p>
+            <p>Oferecemos diferentes áreas de atuação: triagem, distribuição, apoio espiritual e comunicação. Trabalhamos com horários flexíveis, respeitamos sua disponibilidade. Preencha o formulário abaixo e aguarde nosso contato.</p>
+        </div>
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="gallery-title">Nossos Voluntários em Ação</h2>
+                <div class="grid-photos gallery-grid single-column">
+                    <figure class="photo">
+                        <img src="https://inovasocial.com.br/wp-content/uploads/2023/11/dia-de-doar-guia-tipos-doacao-inovacao-social-impacto-inovasocial-01-1200x675.jpg" alt="Equipe de voluntários" />
+                    </figure>
+                </div>
+                <div class="volunteer-info-text">
+                    <h3>Seja parte da transformação</h3>
+                    <p>Nossos voluntários são o coração do trabalho, dedicando-se com paixão para fazer a diferença na vida de quem precisa. Oferecemos diferentes áreas: triagem, distribuição, apoio espiritual e comunicação.</p>
+                    <p>Trabalhamos com horários flexíveis. Não importa se você pode dedicar algumas horas por semana ou apenas em eventos especiais, sua contribuição é valiosa. Junte-se a nós e descubra como servir transforma vidas.</p>
+                </div>
+            </div>
+        </section>
+        <section class="form-section">
+            <form class="donation-form" action="#" method="post">
+                <div class="field-row">
+                    <label>Nome completo
+                        <input type="text" name="name" placeholder="Seu nome" required>
+                    </label>
+                    <label>E-mail
+                        <input type="email" name="email" placeholder="seu@exemplo.com" required>
+                    </label>
+                </div>
+                <label>Telefone / WhatsApp
+                    <input type="tel" name="phone" placeholder="(XX) XXXXX-XXXX" required>
+                </label>
+                <label>Área de interesse
+                    <select name="area">
+                        <option>Triagem e organização</option>
+                        <option>Distribuição</option>
+                        <option>Apoio espiritual</option>
+                        <option>Comunicação</option>
+                        <option>Outros</option>
+                    </select>
+                </label>
+                <label>Disponibilidade
+                    <select name="availability">
+                        <option>Finais de semana</option>
+                        <option>Durante a semana</option>
+                        <option>Ambos</option>
+                    </select>
+                </label>
+                <label>Mensagem (opcional)
+                    <textarea name="message" rows="4" placeholder="Conte um pouco sobre você e sua motivação"></textarea>
+                </label>
+                <label class="consent"><input type="checkbox" name="consent" required> Eu concordo que meus dados serão usados para contato referente ao voluntariado.</label>
+                <div class="form-actions">
+                    <button class="btn btn-primary" type="submit">Me Inscrever</button>
+                    <a class="btn btn-outline" href="../index.html">Voltar</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <strong>Avivamento</strong> — Grupo de Oração • Feito com fé e amor</p>
+        </div>
+    </footer>
+</body>
+</html>

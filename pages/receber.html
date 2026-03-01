@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Receber Doações — Avivamento</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="../index.html">
+                <svg class="logo-emoji" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="2" width="4" height="20" fill="var(--blue-700)" rx="1"/>
+                    <rect x="4" y="10" width="16" height="4" fill="var(--blue-700)" rx="1"/>
+                </svg>
+                <div class="logo-text-wrapper">
+                    <span class="logo-text">Avivamento</span>
+                    <span class="logo-subtitle">Nas graças de Cristo</span>
+                </div>
+            </a>
+            <input type="checkbox" id="navToggle" class="nav-toggle-checkbox" aria-label="Abrir menu">
+            <label for="navToggle" class="nav-toggle-label">
+                <span class="hamburger" aria-hidden="true"></span>
+            </label>
+            <nav class="main-nav" role="navigation" aria-label="Menu principal">
+                <div class="nav-logo">
+                    <span class="nav-logo-text">Avivamento</span>
+                    <span class="nav-logo-subtitle">Nas graças de Cristo</span>
+                </div>
+                <a href="../index.html">Início</a>
+                <a href="doar.html" class="btn btn-primary">Quero Doar</a>
+                <a href="receber.html" class="btn btn-outline">Quero Receber</a>
+                <a href="voluntarios.html" class="btn btn-ghost">Voluntários</a>
+                <a class="btn whatsapp" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+preciso+de+ajuda+no+projeto+Avivamento" target="_blank" rel="noopener">WhatsApp</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Solicitar Doação</h1>
+            <p class="subtitle lead">Se você ou alguém que conhece precisa de ajuda, preencha o formulário abaixo. Nossa equipe avaliará e retornará contato.</p>
+        </div>
+        <div class="page-hero-image">
+            <img src="https://www.uberlandia.mg.gov.br/wp-content/uploads/2021/08/Prefeitura-de-Uberlândia-recebe-doação-de-mais-100-cestas-básicas-por-meio-do-Cedec-MG.jpg" alt="Famílias recebendo ajuda" />
+        </div>
+        <div class="intro-text-section">
+            <p>Sabemos que pedir ajuda pode ser difícil. Por isso, nosso processo é discreto, respeitoso e acolhedor. Não há julgamentos, apenas amor e solidariedade.</p>
+            <p>Ao preencher o formulário abaixo, nossa equipe entrará em contato para avaliar sua necessidade. Aguarde nosso retorno e receba o apoio adequado.</p>
+        </div>
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="gallery-title">Ajuda que Transforma</h2>
+                <div class="grid-photos gallery-grid single-column">
+                    <figure class="photo">
+                        <img src="https://www.associacaodosangolanos.ong.br/upload/blog/pSYJ88eiudhtiqxk0h8ba4kyOsLoebjTR4yk6EtQ.jpg" alt="Famílias recebendo apoio" />
+                    </figure>
+                </div>
+                <div class="help-info-text">
+                    <h3>Você não está sozinho</h3>
+                    <p>Oferecemos alimentos, roupas e apoio espiritual. Cada pessoa é tratada com dignidade e respeito. Nossa missão é ser um porto seguro para quem precisa de ajuda.</p>
+                    <p>Trabalhamos com voluntários treinados prontos para ouvir, acolher e apoiar. Se você conhece alguém que precisa, também pode fazer a solicitação em nome dessa pessoa.</p>
+                </div>
+            </div>
+        </section>
+        <section class="form-section">
+            <form class="request-form" action="#" method="post">
+                <div class="field-row">
+                    <label>Nome completo
+                        <input type="text" name="name" placeholder="Seu nome" required>
+                    </label>
+                    <label>Telefone / WhatsApp
+                        <input type="tel" name="phone" placeholder="(XX) XXXXX-XXXX" required>
+                    </label>
+                </div>
+                <label>Cidade / Bairro
+                    <input type="text" name="location" placeholder="Cidade - Bairro" required>
+                </label>
+                <label>Tipo de ajuda necessária
+                    <select name="need">
+                        <option>Alimentos</option>
+                        <option>Roupas</option>
+                        <option>Apoio espiritual</option>
+                        <option>Outros</option>
+                    </select>
+                </label>
+                <label>Descrição da necessidade
+                    <textarea name="description" rows="4" placeholder="Explique brevemente a situação" required></textarea>
+                </label>
+                <label class="consent"><input type="checkbox" name="consent" required> Eu concordo que meus dados serão usados para contato referente à solicitação.</label>
+                <div class="form-actions">
+                    <button class="btn btn-primary" type="submit">Enviar Solicitação</button>
+                    <a class="btn btn-outline" href="../index.html">Voltar</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <strong>Avivamento</strong> — Grupo de Oração • Feito com fé e amor</p>
+        </div>
+    </footer>
+</body>
+</html>
