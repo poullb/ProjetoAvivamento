@@ -31,6 +31,12 @@ O objetivo é oferecer um meio simples de organizar campanhas de arrecadação, 
 - **Design Responsivo**: Adaptação para diferentes tamanhos de tela
 
 
+## Integração de Formulários
+Os formulários do projeto utilizam o serviço da plataforma FormSubmit (https://formsubmit.co/) para envio dos dados por e-mail.
+O envio é realizado por meio de requisição HTTP do tipo POST para o serviço externo, que encaminha automaticamente as informações para o endereço de e-mail configurado.
+Essa integração permite o funcionamento necessário para os formulários do site.
+
+
 ## Estrutura de Arquivos
 ```
 ProjetoAvivamento/
@@ -94,7 +100,7 @@ ProjetoAvivamento/
 
 
 ## Projeto Extensionista
-Este projeto faz parte das*Atividades Extensionistas da UNINTER:
+Este projeto faz parte das Atividades Extensionistas da UNINTER:
 
 - **Disciplina**: Atividade Extensionista II: Tecnologia Aplicada à Inclusão Digital
 - **Curso**: CST em Redes de Computadores
