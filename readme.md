@@ -11,7 +11,7 @@ O objetivo é oferecer um meio simples de organizar campanhas de arrecadação, 
 - Desenvolver um site como ferramenta de apoio às ações de arrecadação de alimentos
 - Melhorar a divulgação das campanhas de doação
 - Facilitar a comunicação com a comunidade local
-- Contribuir para o **ODS 02: Fome zero e agricultura sustentável**
+- Contribuir para o "ODS 02: Fome zero e agricultura sustentável"
 
 
 ## Funcionalidades
