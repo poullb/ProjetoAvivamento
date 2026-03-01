@@ -35,7 +35,7 @@ async function sendEmail(subject, text) {
         }
     });
     await transporter.sendMail({
-        from: process.env.EMAIL_FROM || 'no-reply@jovenessarados.org',
+        from: process.env.EMAIL_FROM || 'no-reply@avivamentorn.org',
         to: process.env.EMAIL_TO || process.env.SMTP_USER,
         subject,
         text
@@ -171,7 +171,7 @@ function renderTable(data) {
 app.get('/admin', requireAdmin, (req, res) => {
     const donations = parseCSV(path.join(__dirname, 'donations.csv'));
     const requests = parseCSV(path.join(__dirname, 'requests.csv'));
-    const html = `<!doctype html><html><head><meta charset="utf-8"><title>Admin — Jovens Sarados</title>
+    const html = `<!doctype html><html><head><meta charset="utf-8"><title>Admin — Avivamento</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <style>body{font-family:Inter,Arial,Helvetica,sans-serif;padding:18px;background:#f7fbff;color:#06223a}h1{margin-top:0}table{border-collapse:collapse;width:100%;margin-bottom:28px}th,td{border:1px solid #e6eef9;padding:8px;text-align:left}th{background:#f0f6ff}</style></head><body>
     <h1>Painel administrativo</h1>
@@ -185,5 +185,6 @@ app.get('/admin', requireAdmin, (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server listening on http://localhost:${PORT}`);
 });
+
 
 
