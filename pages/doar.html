@@ -67,13 +67,18 @@
         </section>
         <section class="form-section">
             <div class="form-grid">
-                <form class="donation-form" action="#" method="post">
+                <!-- <form class="donation-form" action="#" method="post"> -->
+                <form action="https://formsubmit.co/gumails@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Nova doação - Projeto Avivamento">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_autoresponse" value="Recebemos sua doação. Entraremos em contato em breve.">
                     <div class="field-row">
                         <label>Nome completo
-                            <input type="text" name="name" placeholder="Seu nome" required>
+                            <input type="text" name="name" required>
                         </label>
                         <label>E-mail para contato
-                            <input type="email" name="email" placeholder="seu@exemplo.com" required>
+                            <input type="email" name="email" required>
                         </label>
                     </div>
                     <label>Tipo de doação
@@ -125,4 +130,5 @@
     </footer>
 </body>
 </html>
+
 
